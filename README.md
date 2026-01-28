@@ -1,18 +1,75 @@
-# React + Vite
+## StoreRepublic Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React single-page application built with Vite for the **StoreRepublic** brand.
+It showcases key sections like internships, case studies, news, awards, team, and contact.
 
-Currently, two official plugins are available:
+### Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (with React Compiler)
+- **Vite**
+- **Tailwind CSS** + **daisyUI**
+- **ESLint** for linting
 
-## React Compiler
+### Getting Started
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Install dependencies**
 
-Note: This will impact Vite dev & build performances.
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+- **Run the dev server**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+
+The app will start on the port shown in the terminal (typically `http://localhost:5173`).
+
+- **Build for production**
+
+```bash
+npm run build
+```
+
+- **Preview production build**
+
+```bash
+npm run preview
+```
+
+- **Run linter**
+
+```bash
+npm run lint
+```
+
+### Project Structure (key folders)
+
+- `src/App.jsx` – main app layout and routing.
+- `src/main.jsx` – React entry point.
+- `src/index.css` – global styles and Tailwind setup.
+- `src/Component/Navbar` – `Navbar` and `TopNavbar` components.
+- `src/Component/Banner` – hero/banner components.
+- `src/Component/InternshipLanding` – internship landing section.
+- `src/Component/Information` – info and internship page sections.
+- `src/Component/CaseStudies` – case studies section.
+- `src/Component/TeamSection` – team listing section.
+- `src/Component/AwardsStats` – awards and stats section.
+- `src/Component/NewsSection` – news/blog section.
+- `src/Component/ContactSection` – contact form / CTA.
+- `src/Component/Footer` – footer component.
+
+Static images and assets live in the `public` directory.
+
+### Scripts (from `package.json`)
+
+- **`npm run dev`**: start Vite dev server.
+- **`npm run build`**: production build.
+- **`npm run preview`**: preview the build locally.
+- **`npm run lint`**: run ESLint on the project.
+
+### License
+
+This project is for demonstration and assessment purposes. Adjust the license section as needed for your use case.
+
